@@ -1,0 +1,8 @@
+path: ../datasets/uav410   # dataset root dir
+train: train/images
+val: valid/images
+test: test/images
+
+# Classes
+nc: 1  # number of classes
+names: ['uav']  # class names

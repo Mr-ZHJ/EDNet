@@ -1,0 +1,8 @@
+path: ../datasets/Det-fly    # dataset root dir
+train: train/images
+val: val/images
+test: test/images
+
+# Classes
+nc: 1  # number of classes
+names: ['uav']  # class names
