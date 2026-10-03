@@ -169,18 +169,10 @@ Train Lite-EDNet:
 python train.py --data Uav5.yaml --cfg models/Lite-ERAD-YOLO.yaml --weights '' --batch-size 16 --img 640 --epochs 300
 ```
 
-Key training parameters (as used in the paper):
+**Key training parameters (as used in the paper):**
 
-| Parameter | Value |
-|-----------|-------|
-| Optimizer | SGD |
-| Learning rate | 0.01 |
-| Momentum | 0.937 |
-| Weight decay | 0.0005 |
-| Batch size | 16 |
-| Input size | 640×640 |
-| Epochs | 300 |
-| Loss | CIoU |
+The model is trained using the **SGD** optimizer with an initial learning rate of **0.01**, a momentum of **0.937**, and a weight decay of **0.0005**. We use a batch size of **16** and an input image size of **640×640**. The training process runs for **300** epochs, and the **CIoU** loss is adopted as the bounding box regression loss.
+
 
 ### Inference
 
