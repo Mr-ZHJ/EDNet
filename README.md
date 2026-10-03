@@ -54,29 +54,6 @@ A lighter variant, **Lite-EDNet**, further replaces the neck convolutions with G
 
 ## Architecture
 
-```
-Input Image (640×640)
-       │
-   ┌───┴───────────────────────────────────────────────────┐
-   │                   Backbone (EfficientNet+RepVGG)        │
-   │  Stem → RepVGGBlock → SimAM → MBConv×17 → SimAM_ELA → SPPF │
-   └───┬───────────────┬───────────────┬─────────────────────┘
-       │ P3/8          │ P4/16         │ P5/32
-   ┌───┴───────────────┴───────────────┴─────────────────────┐
-   │                  Neck (FPN + PANet)                      │
-   │        C3_DWR ←→ C3_DWR ←→ C3_DWR                       │
-   └───┬───────────────┬───────────────┬─────────────────────┘
-       │ Small          │ Medium        │ Large
-   ┌───┴───┐       ┌───┴───┐       ┌───┴───┐
-   │SimAM_  │       │SimAM_  │       │SimAM_  │
-   │  ELA   │       │  ELA   │       │  ELA   │
-   └───┬───┘       └───┬───┘       └───┬───┘
-       └────────┬────────┴────────────────┘
-                │
-          ┌─────┴─────┐
-          │  Detect    │  (P3, P4, P5)
-          └───────────┘
-```
 <div align="center">
   <img width="848" height="527" alt="image" src="https://github.com/user-attachments/assets/3b430b41-706c-42b1-8a19-325a0b6c266f" />
   <br><br> <!-- 这里加两个换行，让两张图片之间有一点间距 -->
@@ -121,29 +98,39 @@ EDNet/
 
 ### EDNet (Full Model)
 
+<div align="center">
+
 | Dataset | mAP50 | mAP50:95 | APsmall | APmid | APlarge |
-|---------|-------|----------|---------|-------|---------|
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | Self-built | 96.6% | 78.1% | 60.6% | 80.9% | 86.2% |
 | UAV | 98.2% | 77.0% | 61.9% | 78.7% | 80.0% |
-| Det-Fly | 97.7% | 65.6% | 24.6% | — | — |
+| Det-Fly | 97.7% | 65.6% | 24.6% | - | - |
+
+<br>
 
 | Model | FLOPs (G) | Params (M) |
-|-------|-----------|------------|
+| :---: | :---: | :---: |
 | EDNet | 9.6 | 4.72 |
 | Lite-EDNet | 9.1 | 4.28 |
 | YOLOv5s (baseline) | 15.8 | 7.02 |
 
+</div>
+
 ### Ablation Study (Self-built Dataset)
 
+<div align="center">
+
 | Model | Components | mAP50 | mAP50:95 | FLOPs | Params |
-|-------|-----------|-------|----------|-------|--------|
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | Y | YOLOv5s (baseline) | 94.4% | 66.7% | 15.8 | 7.02 |
 | Y-E | + EfficientNet+RepVGG | 94.4% | 66.7% | 7.7 | 3.78 |
 | Y-E-A | + ACA | 96.2% | 67.4% | 7.7 | 3.80 |
 | Y-E-A-D (EDNet) | + C3-DWR | **96.6%** | **78.1%** | 9.6 | 4.72 |
-| Y-E-A-D-S (Lite) | + Slim-Neck | 96.3% | — | 9.1 | 4.28 |
+| Y-E-A-D-S (Lite) | + Slim-Neck | 96.3% | - | 9.1 | 4.28 |
 
-> **Y**: YOLOv5s · **E**: EfficientNet + RepVGG · **A**: ACA Module · **D**: C3-DWR · **S**: Slim-Neck
+</div>
+
+> **Y**: YOLOv5s . **E**: EfficientNet + RepVGG . **A**: ACA Module . **D**: C3-DWR . **S**: Slim-Neck
 
 ---
 
