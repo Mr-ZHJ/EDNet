@@ -1,15 +1,15 @@
 # EDNet: EfficientNet-Based Detection Network for Small UAV Target Detection
 
 <p align="center">
-  <a href="https://github.com/Mr-ZHJ/EDNet/stargazers"><img src="https://img.shields.io/github/stars/Mr-ZHJ/EDNet?style=flat-square&logo=github&color=FFD700" alt="Stars"></a>
-  <a href="https://github.com/Mr-ZHJ/EDNet/network/members"><img src="https://img.shields.io/github/forks/Mr-ZHJ/EDNet?style=flat-square&logo=github&color=blue" alt="Forks"></a>
-  <a href="https://github.com/Mr-ZHJ/EDNet/issues"><img src="https://img.shields.io/github/issues/Mr-ZHJ/EDNet?style=flat-square&logo=github&color=orange" alt="Issues"></a>
-  <br>
-  <img src="https://img.shields.io/badge/Python-3.10+-style=flat-square&logo=python&logoColor=white&color=3776AB" alt="Python 3.10+">
-  <img src="https://img.shields.io/badge/PyTorch-2.1.1+-style=flat-square&logo=pytorch&logoColor=white&color=EE4C2C" alt="PyTorch 2.1.1+">
-  <img src="https://img.shields.io/badge/CUDA-11.8+-style=flat-square&logo=nvidia&logoColor=white&color=76B900" alt="CUDA 11.8+">
-  <img src="https://img.shields.io/badge/License-GPL--3.0-style=flat-square&logo=gnu&logoColor=white&color=A42E2B" alt="GPL-3.0 License">
-  <br>
+  <a href="https://github.com/Mr-ZHJ/EDNet/stargazers"><img src="https://img.shields.io/github/stars/Mr-ZHJ/EDNet?style=flat-square&color=FFD700" alt="Stars"></a>
+  <a href="https://github.com/Mr-ZHJ/EDNet/network/members"><img src="https://img.shields.io/github/forks/Mr-ZHJ/EDNet?style=flat-square&color=blue" alt="Forks"></a>
+  <a href="https://github.com/Mr-ZHJ/EDNet/issues"><img src="https://img.shields.io/github/issues/Mr-ZHJ/EDNet?style=flat-square&color=orange" alt="Issues"></a>
+  <br><br>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/PyTorch-2.1.1+-EE4C2C?style=flat-square" alt="PyTorch 2.1.1+">
+  <img src="https://img.shields.io/badge/CUDA-11.8+-76B900?style=flat-square" alt="CUDA 11.8+">
+  <img src="https://img.shields.io/badge/License-GPL--3.0-A42E2B?style=flat-square" alt="GPL-3.0 License">
+  <br><br>
   <img src="https://img.shields.io/badge/mAP50-96.6%25-brightgreen?style=flat-square" alt="mAP50 96.6%">
   <img src="https://img.shields.io/badge/FLOPs-9.6G-success?style=flat-square" alt="FLOPs 9.6G">
   <img src="https://img.shields.io/badge/Params-4.72M-success?style=flat-square" alt="Params 4.72M">
