@@ -77,9 +77,11 @@ Input Image (640×640)
           │  Detect    │  (P3, P4, P5)
           └───────────┘
 ```
-<img width="848" height="527" alt="image" src="https://github.com/user-attachments/assets/3b430b41-706c-42b1-8a19-325a0b6c266f" />
-<img width="849" height="575" alt="image" src="https://github.com/user-attachments/assets/e208a598-b0ab-481e-a736-f77c2c71dfe6" />
-
+<div align="center">
+  <img width="848" height="527" alt="image" src="https://github.com/user-attachments/assets/3b430b41-706c-42b1-8a19-325a0b6c266f" />
+  <br><br> <!-- 这里加两个换行，让两张图片之间有一点间距 -->
+  <img width="849" height="575" alt="image" src="https://github.com/user-attachments/assets/e208a598-b0ab-481e-a736-f77c2c71dfe6" />
+</div>
 
 ---
 
@@ -150,18 +152,19 @@ EDNet/
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/EDNet.git
+# 1. Clone the repository (克隆仓库)
+git clone https://github.com/Mr-ZHJ/EDNet.git
 cd EDNet
 
-# Create a Python 3.10+ environment (recommended)
+# 2. Create a Python 3.10+ environment (recommended) (创建并激活环境)
 conda create -n ednet python=3.10 -y
 conda activate ednet
 
-# Install PyTorch (adjust CUDA version as needed)
+# 3. Install PyTorch (adjust CUDA version as needed) (安装PyTorch，请根据你的CUDA版本调整)
+# 注意：如果下载缓慢，请先配置好终端代理
 pip install torch==2.1.1 torchvision==0.16.1 --index-url https://download.pytorch.org/whl/cu118
 
-# Install dependencies
+# 4. Install dependencies (安装项目依赖)
 pip install -r requirements.txt
 ```
 
