@@ -72,7 +72,6 @@ A lighter variant, **Lite-EDNet**, further replaces the neck convolutions with G
 <div align="center">
   <img width="848" height="527" alt="image" src="https://github.com/user-attachments/assets/3b430b41-706c-42b1-8a19-325a0b6c266f" />
   <br><br>
-  <img width="849" height="575" alt="image" src="https://github.com/user-attachments/assets/e208a598-b0ab-481e-a736-f77c2c71dfe6" />
 </div>
 
 ---
